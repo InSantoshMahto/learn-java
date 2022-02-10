@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Launch IO",
+      "request": "launch",
+      "mainClass": "IO",
+      "projectName": "learn-java_8a04b8e9"
+    },
+    {
+      "type": "java",
       "name": "Launch Current File",
       "request": "launch",
       "mainClass": "${file}"
