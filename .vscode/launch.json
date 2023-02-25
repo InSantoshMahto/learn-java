@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Launch Day4",
+      "request": "launch",
+      "mainClass": "dsa.Day4",
+      "projectName": "learn-java_19946194"
+    },
+    {
+      "type": "java",
       "name": "Launch IO",
       "request": "launch",
       "mainClass": "IO",

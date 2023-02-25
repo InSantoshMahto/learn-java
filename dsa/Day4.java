@@ -1,6 +1,13 @@
 package dsa;
 
 public class Day4 {
+  public static void main(String[] args) {
+    Day4 d = new Day4();
+    long myNum = 328967962;
+    boolean isPrime = d.isPrime(myNum) != 0;
+    System.out.println(myNum + " is prime:- " + (isPrime ? "Yes" : "No"));
+  }
+
   public int isPrime(long A) {
     if (A == 1) {
       return 0;
