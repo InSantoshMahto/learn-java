@@ -6,6 +6,10 @@ public class Day4 {
     long myNum = 328967962;
     boolean isPrime = d.isPrime(myNum) != 0;
     System.out.println(myNum + " is prime:- " + (isPrime ? "Yes" : "No"));
+    int myCount = d.countFactor(10);
+    System.out.println("My Count Factor is:- " + myCount);
+    int mySqrt = d.sqrt(4);
+    System.out.println("My sqrt is:- " + mySqrt);
   }
 
   public int isPrime(long A) {
@@ -24,5 +28,24 @@ public class Day4 {
       }
     }
     return 1;
+  }
+
+  public int countFactor(int A) {
+    int count = 2;
+    for (int i = 2; i <= (A / 2); i++) {
+      if (A % i == 0) {
+        count++;
+      }
+    }
+    return count;
+  }
+
+  public int sqrt(int A) {
+    double sqrt = Math.sqrt(A);
+    if ((sqrt % 1) == 0) {
+      return (int) sqrt;
+    } else {
+      return -1;
+    }
   }
 }
