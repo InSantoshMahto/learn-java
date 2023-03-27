@@ -6,17 +6,24 @@
   "configurations": [
     {
       "type": "java",
-      "name": "Launch Day4",
+      "name": "LeetCode",
       "request": "launch",
-      "mainClass": "dsa.Day4",
+      "mainClass": "LeetCode",
       "projectName": "learn-java_19946194"
     },
     {
       "type": "java",
-      "name": "Launch IO",
+      "name": "Launch Day7",
       "request": "launch",
-      "mainClass": "IO",
-      "projectName": "learn-java_8a04b8e9"
+      "mainClass": "practice.Day7",
+      "projectName": "learn-java_19946194"
+    },
+    {
+      "type": "java",
+      "name": "Launch Day5",
+      "request": "launch",
+      "mainClass": "practice.Day5",
+      "projectName": "learn-java_19946194"
     },
     {
       "type": "java",
