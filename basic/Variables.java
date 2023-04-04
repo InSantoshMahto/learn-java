@@ -1,6 +1,6 @@
 package basic;
 
-class Variable {
+class Variables {
   public static void main(String[] args) {
     System.out.println("Learn Variable in Java");
     // integer

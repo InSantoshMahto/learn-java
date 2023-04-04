@@ -2,7 +2,7 @@ package basic;
 
 import java.util.Scanner;
 
-class IO {
+class InputOutput {
   public static void main(String[] args) {
     System.out.println("IO in Java");
 
