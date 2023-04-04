@@ -9,6 +9,7 @@
 
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
+out
 
 # Package Files #
 *.jar
@@ -23,3 +24,5 @@
 hs_err_pid*
 
 DS_Store
+.vscode
+.idea
