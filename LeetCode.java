@@ -3,9 +3,9 @@ import java.util.HashMap;
 public class LeetCode {
   public static void main(String[] args) {
     LeetCode lc = new LeetCode();
-    // int[] arrayOfNumbers = { 2, 3, 4, 5, 4 };
     int[] arrayOfNumbers = { 2, 7, 11, 15 };
-    int[] result = lc.twoSum(arrayOfNumbers, 9);
+    int target = 9;
+    int[] result = lc.twoSum(arrayOfNumbers, target);
     System.out.println("Two Sum of:-");
     lc.printArray(result);
   }
