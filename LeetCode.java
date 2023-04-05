@@ -60,26 +60,26 @@ public class LeetCode {
     return list;
   }
 
-  public List<List<Integer>> threeSumPro(int[] nums) {
-    Arrays.sort(nums);
+  public List<List<Integer>> threeSumPro(int[] numbers) {
+    Arrays.sort(numbers);
     List<List<Integer>> res = new ArrayList<>();
-    for (int i = 0; i < nums.length && nums[i] <= 0; ++i)
-      if (i == 0 || nums[i - 1] != nums[i]) {
-        twoSumPro(nums, i, res);
+    for (int i = 0; i < numbers.length && numbers[i] <= 0; ++i)
+      if (i == 0 || numbers[i - 1] != numbers[i]) {
+        twoSumPro(numbers, i, res);
       }
     return res;
   }
-  
-  void twoSumPro(int[] nums, int i, List<List<Integer>> res) {
+
+  void twoSumPro(int[] numbers, int i, List<List<Integer>> res) {
     Set<Integer> seen = new HashSet<Integer>();
-    for (int j = i + 1; j < nums.length; ++j) {
-      int complement = -nums[i] - nums[j];
+    for (int j = i + 1; j < numbers.length; ++j) {
+      int complement = -numbers[i] - numbers[j];
       if (seen.contains(complement)) {
-        res.add(Arrays.asList(nums[i], nums[j], complement));
-        while (j + 1 < nums.length && nums[j] == nums[j + 1])
+        res.add(Arrays.asList(numbers[i], numbers[j], complement));
+        while (j + 1 < numbers.length && numbers[j] == numbers[j + 1])
           ++j;
       }
-      seen.add(nums[j]);
+      seen.add(numbers[j]);
     }
   }
 
