@@ -14,16 +14,16 @@ public class Day25 {
 
     long half = pow(A, B / 2, C);
     if (B % 2 == 0) {
-      long mult = half * half;
-      long mod = mult % C;
-      return mod < 0 ? mult + C : mod;
+      long mul = half * half;
+      long mod = mul % C;
+      return mod < 0 ? mul + C : mod;
     } else {
-      long firstMult = A * half;
-      long firstMod = firstMult % C;
-      firstMod = firstMod < 0 ? firstMult + C : firstMod;
-      long secondMult = firstMod * half;
-      long secondMod = secondMult % C;
-      return secondMod < 0 ? secondMult + C : secondMod;
+      long firstMul = A * half;
+      long firstMod = firstMul % C;
+      firstMod = firstMod < 0 ? firstMul + C : firstMod;
+      long secondMul = firstMod * half;
+      long secondMod = secondMul % C;
+      return secondMod < 0 ? secondMul + C : secondMod;
     }
   }
 }
